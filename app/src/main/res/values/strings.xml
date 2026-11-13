@@ -3,6 +3,7 @@
     <string name="app_name">MinhaLauncher</string>
     <string name="choose">Escolher</string>
     <string name="choose_app">Escolher Aplicativo</string>
+    <string name="choose_user">Escolher Usuário</string>
     <string name="installed_app">Aplicativo Instalado</string>
     <string name="installed_module">Módulo Instalado</string>
     <string name="empty_empty">Vazio</string>
@@ -33,6 +34,7 @@
     <string name="is_stop">%s foi parado</string>
     <string name="app_clear">Limpar Dados</string>
     <string name="app_clear_hint">Deseja limpar os dados de %s?</string>
+    <string name="app_remove">Desinstalar Aplicativo</string>
     <string name="clear_success">Dados limpos com sucesso</string>
     <string name="add_shortcut_fail_msg">Falha ao criar atalho</string>
     <string name="app_shortcut">Atalho</string>
@@ -64,4 +66,17 @@
     <string name="disable_gms">Desativar Serviço</string>
     <string name="disable_gms_hint">Limpar ambiente de serviços Google?</string>
     <string name="no_gms">Não há ambiente de serviços Google no dispositivo</string>
+    <string name="user">Usuário</string>
+    <string name="install">Instalar</string>
+    <string name="uninstall">Desinstalar</string>
+    <string name="launch">Abrir</string>
+    <string name="create_shortcut">Criar atalho</string>
+    <string name="clear_data">Limpar dados</string>
+    <string name="force_stop">Forçar parada</string>
+    <string name="no_app">Nenhum aplicativo</string>
+    <string name="no_user">Nenhum usuário</string>
+    <string name="app_manager">Gerenciador de apps</string>
+    <string name="about">Sobre</string>
+    <string name="shortcut_name">Nome do atalho</string>
+    <string name="try_add_shortcut">Tentar adicionar à área de trabalho</string>
 </resources>
