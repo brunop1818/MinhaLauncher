@@ -22,6 +22,9 @@
         android:extractNativeLibs="true"
         android:multiArch="true"
         android:use32bitAbi="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
         tools:targetApi="n">
 
         <activity
