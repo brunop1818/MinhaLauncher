@@ -60,6 +60,7 @@ import top.niunaijun.blackbox.fake.service.AuthenticationProxy;
 import top.niunaijun.blackbox.fake.service.AndroidIdProxy;
 import top.niunaijun.blackbox.fake.service.AudioPermissionProxy;
 import top.niunaijun.blackbox.fake.service.NetworkPermissionCompat;
+import top.niunaijun.blackbox.fake.service.AntiVirtualDetectProxy;
 
 import top.niunaijun.blackbox.fake.service.INetworkManagementServiceProxy;
 import top.niunaijun.blackbox.fake.service.INotificationManagerProxy;
@@ -154,15 +155,14 @@ public class HookManager {
             addInjector(new NetworkPermissionCompat());
             addInjector(new IConnectivityManagerProxy());
             addInjector(new IDnsResolverProxy());
-                    addInjector(new IAttributionSourceProxy());
-        addInjector(new IContentProviderProxy());
-        addInjector(new ISettingsSystemProxy());
-        addInjector(new ISystemSensorManagerProxy());
-        
-        
-        addInjector(new IXiaomiAttributionSourceProxy());
-        addInjector(new IXiaomiSettingsProxy());
-        addInjector(new IXiaomiMiuiServicesProxy());
+            addInjector(new IAttributionSourceProxy());
+            addInjector(new IContentProviderProxy());
+            addInjector(new ISettingsSystemProxy());
+            addInjector(new ISystemSensorManagerProxy());
+            
+            addInjector(new IXiaomiAttributionSourceProxy());
+            addInjector(new IXiaomiSettingsProxy());
+            addInjector(new IXiaomiMiuiServicesProxy());
             addInjector(new IPhoneSubInfoProxy());
             addInjector(new IMediaRouterServiceProxy());
             addInjector(new IPowerManagerProxy());
@@ -176,6 +176,9 @@ public class HookManager {
             addInjector(new IWifiScannerProxy());
             addInjector(new ApkAssetsProxy());
             addInjector(new ResourcesManagerProxy());
+            
+            // Anti-detecção de ambiente virtual
+            addInjector(new AntiVirtualDetectProxy());
             
             if (BuildCompat.isS()) {
                 addInjector(new IActivityClientProxy(null));
